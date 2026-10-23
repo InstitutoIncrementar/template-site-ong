@@ -1,0 +1,135 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+# ATENÇÃO ao criar o site de uma ONG: troque `repo` pelo repositório dela (dono/nome).
+backend:
+  name: github
+  repo: InstitutoIncrementar/template-site-ong
+  branch: main
+
+# Imagens enviadas pelo painel ficam em public/uploads e são servidas em /uploads.
+media_folder: /public/uploads
+public_folder: /uploads
+
+collections:
+  - name: site
+    label: Conteúdo do site
+    files:
+      - name: settings
+        label: Geral (nome, logo e Google)
+        file: content/settings.json
+        fields:
+          - { label: Nome da ONG, name: siteName, widget: string }
+          - { label: Logo, name: logo, widget: image, hint: "Imagem quadrada, de preferência PNG ou SVG." }
+          - { label: Título que aparece no Google, name: metaTitle, widget: string }
+          - { label: Descrição que aparece no Google, name: metaDescription, widget: text }
+
+      - name: hero
+        label: Início (topo da página)
+        file: content/hero.json
+        fields:
+          - { label: Texto pequeno acima do título, name: eyebrow, widget: string, required: false }
+          - { label: Título, name: title, widget: string }
+          - { label: Subtítulo, name: subtitle, widget: text }
+          - label: Botão principal
+            name: primaryCta
+            widget: object
+            fields:
+              - { label: Texto do botão, name: label, widget: string }
+              - { label: Link, name: url, widget: string, hint: "Ex.: #contato ou https://..." }
+          - label: Botão secundário
+            name: secondaryCta
+            widget: object
+            required: false
+            fields:
+              - { label: Texto do botão, name: label, widget: string, required: false }
+              - { label: Link, name: url, widget: string, required: false }
+          - { label: Imagem, name: image, widget: image, required: false }
+
+      - name: sobre
+        label: Quem somos
+        file: content/sobre.json
+        fields:
+          - { label: Texto pequeno acima do título, name: eyebrow, widget: string, required: false }
+          - { label: Título, name: title, widget: string }
+          - { label: Texto, name: text, widget: text, hint: "Separe os parágrafos com uma linha em branco." }
+          - { label: Título do quadro da missão, name: missionTitle, widget: string }
+          - { label: Missão, name: mission, widget: text, required: false }
+          - { label: Imagem, name: image, widget: image, required: false }
+
+      - name: projetos
+        label: Projetos
+        file: content/projetos.json
+        fields:
+          - { label: Texto pequeno acima do título, name: eyebrow, widget: string, required: false }
+          - { label: Título, name: title, widget: string }
+          - { label: Introdução, name: intro, widget: text, required: false }
+          - label: Projetos
+            label_singular: projeto
+            name: items
+            widget: list
+            required: false
+            summary: "{{fields.title}}"
+            hint: "Se a lista ficar vazia, a seção some do site."
+            fields:
+              - { label: Nome do projeto, name: title, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Imagem, name: image, widget: image, required: false }
+
+      - name: equipe
+        label: Equipe
+        file: content/equipe.json
+        fields:
+          - { label: Texto pequeno acima do título, name: eyebrow, widget: string, required: false }
+          - { label: Título, name: title, widget: string }
+          - { label: Introdução, name: intro, widget: text, required: false }
+          - label: Pessoas
+            label_singular: pessoa
+            name: items
+            widget: list
+            required: false
+            summary: "{{fields.name}} — {{fields.role}}"
+            hint: "Se a lista ficar vazia, a seção some do site."
+            fields:
+              - { label: Nome, name: name, widget: string }
+              - { label: Cargo ou função, name: role, widget: string }
+              - { label: Foto, name: photo, widget: image, required: false }
+
+      - name: parceiros
+        label: Parceiros
+        file: content/parceiros.json
+        fields:
+          - { label: Texto pequeno acima do título, name: eyebrow, widget: string, required: false }
+          - { label: Título, name: title, widget: string }
+          - label: Parceiros
+            label_singular: parceiro
+            name: items
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
+            hint: "Se a lista ficar vazia, a seção some do site."
+            fields:
+              - { label: Nome, name: name, widget: string }
+              - { label: Logo, name: logo, widget: image }
+              - { label: Link do site (opcional), name: url, widget: string, required: false }
+
+      - name: contato
+        label: Contato e redes
+        file: content/contato.json
+        fields:
+          - { label: Texto pequeno acima do título, name: eyebrow, widget: string, required: false }
+          - { label: Título, name: title, widget: string }
+          - { label: Subtítulo, name: subtitle, widget: text, required: false }
+          - { label: E-mail, name: email, widget: string, required: false }
+          - { label: Telefone, name: phone, widget: string, required: false }
+          - { label: Endereço, name: address, widget: string, required: false }
+          - { label: Texto do botão do formulário, name: formLabel, widget: string }
+          - { label: Link do formulário (Google Forms), name: formUrl, widget: string, required: false }
+          - label: Redes sociais
+            label_singular: rede social
+            name: socials
+            widget: list
+            required: false
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Nome da rede, name: label, widget: string }
+              - { label: Link, name: url, widget: string }

@@ -1,0 +1,9 @@
+{
+  "eyebrow": "Quem apoia",
+  "title": "Parceiros e apoiadores",
+  "items": [
+    { "name": "Parceiro exemplo 1", "logo": "/uploads/placeholder.svg", "url": "" },
+    { "name": "Parceiro exemplo 2", "logo": "/uploads/placeholder.svg", "url": "" },
+    { "name": "Parceiro exemplo 3", "logo": "/uploads/placeholder.svg", "url": "" }
+  ]
+}

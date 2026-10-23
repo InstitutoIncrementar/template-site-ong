@@ -1,0 +1,22 @@
+{
+  "eyebrow": "O que fazemos",
+  "title": "Nossos projetos",
+  "intro": "Conheça as frentes de trabalho da organização.",
+  "items": [
+    {
+      "title": "Projeto exemplo 1",
+      "description": "Descreva em poucas linhas o que o projeto faz, quem é beneficiado e qual o impacto.",
+      "image": "/uploads/placeholder.svg"
+    },
+    {
+      "title": "Projeto exemplo 2",
+      "description": "Descreva em poucas linhas o que o projeto faz, quem é beneficiado e qual o impacto.",
+      "image": "/uploads/placeholder.svg"
+    },
+    {
+      "title": "Projeto exemplo 3",
+      "description": "Descreva em poucas linhas o que o projeto faz, quem é beneficiado e qual o impacto.",
+      "image": "/uploads/placeholder.svg"
+    }
+  ]
+}

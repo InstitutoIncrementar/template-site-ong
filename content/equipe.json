@@ -1,0 +1,11 @@
+{
+  "eyebrow": "Quem faz acontecer",
+  "title": "Nossa equipe",
+  "intro": "As pessoas por trás do trabalho da organização.",
+  "items": [
+    { "name": "Nome da pessoa", "role": "Cargo ou função", "photo": "/uploads/placeholder.svg" },
+    { "name": "Nome da pessoa", "role": "Cargo ou função", "photo": "/uploads/placeholder.svg" },
+    { "name": "Nome da pessoa", "role": "Cargo ou função", "photo": "/uploads/placeholder.svg" },
+    { "name": "Nome da pessoa", "role": "Cargo ou função", "photo": "/uploads/placeholder.svg" }
+  ]
+}

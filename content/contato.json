@@ -1,0 +1,14 @@
+{
+  "eyebrow": "Contato",
+  "title": "Vamos conversar?",
+  "subtitle": "Quer ajudar, ser voluntário ou conhecer melhor o nosso trabalho? Fale com a gente.",
+  "email": "contato@exemplo.org",
+  "phone": "(00) 00000-0000",
+  "address": "Rua Exemplo, 123 — Cidade/UF",
+  "formLabel": "Preencher o formulário",
+  "formUrl": "https://forms.google.com",
+  "socials": [
+    { "label": "Instagram", "url": "https://www.instagram.com/" },
+    { "label": "Facebook", "url": "https://www.facebook.com/" }
+  ]
+}

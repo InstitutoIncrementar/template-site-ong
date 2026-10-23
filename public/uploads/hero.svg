@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-label="Ilustração de exemplo">
+  <circle cx="240" cy="240" r="220" fill="#2F5D8A" opacity="0.08"/>
+  <circle cx="240" cy="240" r="150" fill="#2F5D8A" opacity="0.1"/>
+  <g stroke="#2F5D8A" stroke-opacity="0.35" stroke-width="2">
+    <line x1="240" y1="240" x2="110" y2="150"/>
+    <line x1="240" y1="240" x2="370" y2="140"/>
+    <line x1="240" y1="240" x2="110" y2="340"/>
+    <line x1="240" y1="240" x2="375" y2="345"/>
+  </g>
+  <circle cx="110" cy="150" r="16" fill="#E0A030"/>
+  <circle cx="370" cy="140" r="12" fill="#2F5D8A"/>
+  <circle cx="110" cy="340" r="12" fill="#2F5D8A"/>
+  <circle cx="375" cy="345" r="16" fill="#E0A030"/>
+  <circle cx="240" cy="240" r="42" fill="#2F5D8A"/>
+  <path d="M240 262s-22-13-22-29a12 12 0 0 1 22-7 12 12 0 0 1 22 7c0 16-22 29-22 29z" fill="#FAFAF7"/>
+</svg>

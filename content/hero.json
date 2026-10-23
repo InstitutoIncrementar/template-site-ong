@@ -1,0 +1,8 @@
+{
+  "eyebrow": "Organização sem fins lucrativos",
+  "title": "Transformando vidas, um passo de cada vez.",
+  "subtitle": "Somos uma organização que trabalha lado a lado com a comunidade para promover cuidado, educação e oportunidades. Conheça nossa causa e faça parte dela.",
+  "primaryCta": { "label": "Quero ajudar", "url": "#contato" },
+  "secondaryCta": { "label": "Conheça nossos projetos", "url": "#projetos" },
+  "image": "/uploads/hero.svg"
+}
